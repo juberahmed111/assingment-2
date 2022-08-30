@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>worldcup2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f18e0331e2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+
+
+        <header class="header">
+            <!-- first part -->
+            <div class="header_text">
+                <h1>The Greatest <br> show on </br> the earth</h1>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply
+                    random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000
+                    years old.</p>
+
+                <button>Whatch Live</button>
+
+            </div>
+
+
+            <div class="header_img">
+                <img src="assets/Banner Image.png" alt="">
+            </div>
+        </header>
+
+
+
+        <section class="world_cup">
+            <!-- part 1 -->
+
+            <div class="worldCup_btnGroup">
+
+                <a href="http://127.0.0.1:5500/upcomingMatch.html" class="button">Upcoming match</a>
+                <a href="#blog" class="button">All Groups</a>
+                <a href="#blog" class="button">Blogs</a>
+
+
+
+
+            </div>
+            <!-- part 1 -->
+            <div class="worldCup_card_part" id="blog">
+                <!-- Card part -->
+                <div class="worldCup_card">
+                    <img src="assets/Blog Image.png" alt="">
+                    <div class="worldCup_card_text">
+                        <button>Transfer</button>
+                        <p>Transfer Live: Chlesea in talks over Kimpenbe transfer</p>
+                        <div class="card_footer">
+
+
+                            <div class="card_footer">
+                                <img style="width:30px; "
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ5HVjqLPO8jdxhVGJk3gFB7M2ZNMkMj22gg&usqp=CAU"
+                                    alt=""> 10 H
+                            </div>
+                            <div class="card_footer">
+                                <img style="width:30px; "
+                                    src="data:image/png;base64,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"
+                                    alt=""> 10 H
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- card-2 -->
+
+                <div class="worldCup_card">
+                    <img src="assets/Blog Image.png" alt="">
+                    <div class="worldCup_card_text">
+                        <button>Transfer</button>
+                        <p>Transfer Live: Chlesea in talks over Kimpenbe transfer</p>
+                        <div class="card_footer">
+
+
+                            <div class="card_footer">
+                                <img style="width:30px; "
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ5HVjqLPO8jdxhVGJk3gFB7M2ZNMkMj22gg&usqp=CAU"
+                                    alt=""> 10 H
+                            </div>
+                            <div class="card_footer">
+                                <img style="width:30px; "
+                                    src="data:image/png;base64,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"
+                                    alt=""> 10 H
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- card-3-->
+
+                <div class="worldCup_card">
+                    <img src="assets/Blog Image.png" alt="">
+                    <div class="worldCup_card_text">
+                        <button>Transfer</button>
+                        <p>Transfer Live: Chlesea in talks over Kimpenbe transfer</p>
+                        <div class="card_footer">
+
+
+                            <div class="card_footer">
+                                <img style="width:30px; "
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ5HVjqLPO8jdxhVGJk3gFB7M2ZNMkMj22gg&usqp=CAU"
+                                    alt=""> 10 H
+                            </div>
+                            <div class="card_footer">
+                                <img style="width:30px; "
+                                    src="data:image/png;base64,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"
+                                    alt=""> 10 H
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- card-4-->
+
+                <div class="worldCup_card">
+                    <img src="assets/Blog Image.png" alt="">
+                    <div class="worldCup_card_text">
+                        <button>Transfer</button>
+                        <p>Transfer Live: Chlesea in talks over Kimpenbe transfer</p>
+                        <div class="card_footer">
+
+
+                            <div class="card_footer">
+                                <img style="width:30px; "
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ5HVjqLPO8jdxhVGJk3gFB7M2ZNMkMj22gg&usqp=CAU"
+                                    alt=""> 10 H
+                            </div>
+                            <div class="card_footer">
+                                <img style="width:30px; "
+                                    src="data:image/png;base64,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"
+                                    alt=""> 10 H
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- card-5 -->
+
+                <div class="worldCup_card">
+                    <img src="assets/Blog Image.png" alt="">
+                    <div class="worldCup_card_text">
+                        <button>Transfer</button>
+                        <p>Transfer Live: Chlesea in talks over Kimpenbe transfer</p>
+                        <div class="card_footer">
+
+
+                            <div class="card_footer">
+                                <img style="width:30px; "
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ5HVjqLPO8jdxhVGJk3gFB7M2ZNMkMj22gg&usqp=CAU"
+                                    alt=""> 10 H
+                            </div>
+                            <div class="card_footer">
+                                <img style="width:30px; "
+                                    src="data:image/png;base64,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"
+                                    alt=""> 10 H
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- card-6 -->
+
+                <div class="worldCup_card">
+                    <img src="assets/Blog Image.png" alt="">
+                    <div class="worldCup_card_text">
+                        <button>Transfer</button>
+                        <p>Transfer Live: Chlesea in talks over Kimpenbe transfer</p>
+                        <div class="card_footer">
+
+
+                            <div class="card_footer">
+                                <img style="width:30px; "
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ5HVjqLPO8jdxhVGJk3gFB7M2ZNMkMj22gg&usqp=CAU"
+                                    alt=""> 10 H
+                            </div>
+                            <div class="card_footer">
+                                <img style="width:30px; "
+                                    src="data:image/png;base64,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"
+                                    alt=""> 10 H
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- card-7 -->
+
+                <div class="worldCup_card">
+                    <img src="assets/Blog Image.png" alt="">
+                    <div class="worldCup_card_text">
+                        <button>Transfer</button>
+                        <p>Transfer Live: Chlesea in talks over Kimpenbe transfer</p>
+                        <div class="card_footer">
+
+
+                            <div class="card_footer">
+                                <img style="width:30px; "
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ5HVjqLPO8jdxhVGJk3gFB7M2ZNMkMj22gg&usqp=CAU"
+                                    alt=""> 10 H
+                            </div>
+                            <div class="card_footer">
+                                <img style="width:30px; "
+                                    src="data:image/png;base64,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"
+                                    alt=""> 10 H
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- card- 8-->
+
+                <div class="worldCup_card">
+                    <img src="assets/Blog Image.png" alt="">
+                    <div class="worldCup_card_text">
+                        <button>Transfer</button>
+                        <p>Transfer Live: Chlesea in talks over Kimpenbe transfer</p>
+                        <div class="card_footer">
+
+
+                            <div class="card_footer">
+                                <img style="width:30px; "
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ5HVjqLPO8jdxhVGJk3gFB7M2ZNMkMj22gg&usqp=CAU"
+                                    alt=""> 10 H
+                            </div>
+                            <div class="card_footer">
+                                <img style="width:30px; "
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAe1BMVEX///8AAADl5eXk5OTm5ubj4+P19fXu7u74+Pj39/fw8PDt7e3r6+v6+vry8vJhYWFXV1eGhoZ7e3tdXV3AwMCPj48iIiIZGRloaGgUFBRBQUGoqKgdHR3Jycl2dnaenp7T09O0tLSNjY2ZmZm5ubnZ2dlubm44ODgsLCwzOTU4AAALz0lEQVR4nO2d6XabOhRGZYQZhFAGJ2napkNuh3vf/wkvo42kI6EZOzY/6pW93IQTiaPNFwMIIVRneVZ3rzjPyu6lzHLcvVQT7V4aJSU62k40N6SFhuZUSZmW9v9cQYUVznDVV5hNtWT7idZrlIy0nWi2QvEqzbOM8rRYowymeKKorquiKZuiqqumLFn3wsqyqSonWpYlcaB1CFp3lAG0+1XiYYjwOET7bN8P516itUTbieKRkhWK1bTbB2pCxyHSUCZQ3NMcPPiw98EX+ZBcOfiWNO0YZhuMYX8cdlNXPLZOtLSjREtrBa0t6PAdxCOue28D0bq5gl6KrmI93OPx4MP7oZbuVUnb7qVeo4SnGGOYUhPa73VmQceDD7GZzj++wUJZU08RCjCnfmXVnmUt6TWsFlOF5u2l5BvJWtNZby8yXW0vFk2n7F2nqlizUKqqauwokWkZktYqWk+7NCwRMB07jfMy77f4Gy/zVos/5hf/vsJrWC2ijWEg3fYROHTSr7KaNKleSpkVrQ0oCU1ZR4maJuilLh3WtZdigH789RCPotV4q1opeUpCp8k0ToNUquYicHNZhpTKNJNooaS5jrKZIn5qRlktTCesbmpm66sFTpu1uaha2PPDmaJBk5pRv5pJyprGhBI/WhrQWqa1jjKApstpAgmcmardsjbPMdSrWsqsLRuzNk60ui8BKZso/F53SkwpkSgzprF6qavAhVK1W9bmLnAKVTMWOAdVW8varDoNBjsNBtcFC3qUshVaKKm0Wlx01sYJnELVYmVtrqoWN2tbSFl7lKcWVLUW1K/gdJKyFhS4gbY6ehK48Tug9YMvfNa2D5TTiIfkLWvzG0ONqvkJXJCsTdKkOi2V9QumzIVulrXpBW69l+pV7Za1OanaeWdtVp0GX1in4afm+U5YUNWyJFlbOFWLnrUNqtZWrSxwREurELR2oKVEGUC3ztqsBc5M1T5A1mYRf9uMYboGGjxrI6NSkUmpSBmUEjtKeMqsKeGofy/1V7UlDaVqt6zNROAgVbuErG2asHuJAp0GQz0F0WZwweHEpfuv3bEyfEkanpYL2r2n37eWDP81dKcJuFpQippvPx5f7/rtcH+4718Ow0v35f1hld7fvT58/UaLJgem8YqqqQXO7fwQy7RmT98/74Jsj08Ihc3ajlLWDkrVCqoG04qjqHwOU920/VMiIqtaCwpcCwrcTMdO45vToP33oPX123e2OHvSqVqSrO1r8Pr67at4RpQqa5PaKv0SpcDd7ktOA5wBd44zyBMR9MuYoqdI9fXbE1r+tKWUGVP/rC3ODJ23rwpVS5i1/Yha4G73o02btYmqFnkEhxJZgKzNQtUEGvMYnLen5dScDw9+auoo4qem5YSlCQrc7ahl1pbJq4Xh+aGsarGWCX774pu12agaRxMchOP2tVhIWdtCAqemXllbogJ3O2aramGyNhTeRVXb9wRZG9BWy2QF7nalZ9bWyQ0gZRMlClqHPV3Sb8+1sA+AqimoTS/lKUtYYHckps/aaIrF/rQ9lasHn0fWBqZqNF2f6bdHhtyzNsdzi0CZjOH2GSU/t2iSFrjbdZPP4Y+lmUHWBqRqA/2WuMKn3CNrI23bkl7K2knK2naiTEmTGdu8/WDSPhxVDaJspki3zGuyNvqYuMJHYJmPmrU1r4krfPVbLXSqBmdtzSFxhXfAaNlmbQRUNZiWKHWFh/YoZcKeaalH1naXuMJ7lno9TF+h69mTKmvT/AF0oMkrJAGyNnycsKpl/kTJfeIK7+yW+UVOw09N4wm7UYXBsrYPNYY2qragdfr10EDVIOqctW3daeJnbRuvFj7XkEJ/wgCytu1WfI+szUbg2uTWhsxVjaPLXrq3yNq26aWqvzLFyNo2XQ89sralqukFbpsKnbK2Yy+dFvScn5o5QDfqpUJOM3dNcJmfhvNCzy3cs7Z1VVvSzccwetaWusJDbZe1Fb5Z26arBX8Bd6Ss7cJWC/jTJtqsbeMxjJ+1kUvJ2tglZ22mAnd566F91qa7B+2HydrAXorB4cRn0Es5KZMGLgOSqFvW9mGyNnoUOAqq2pLW6Ss87oOsahQUOPpBsjb4DjzXnLVpBe6WtcXcXLK24uNkbTqB6yu8grMno3vQXn7WJvZS9XCeQxIlDZxaby5ltTiQ1Flb8k8MNf5Z2yBltKGAwFFJiFDyT31Jn2sbBE7eM5GOncbhc22/Elf4C61nbaDAua4W9D1xhe9eq4X2yi44a8t/Jq7wD0qctdUocYVIIWWr1P1z3mmb6av8OW9TgXO+Kuh30gp/I49rSHVZG/y4gFGIklZoqWpC1mbUS6WbYZCU0/S1XN4iw2Y4M4TWZFQ1YZN205+5parJq4WZqnE04Qe/uhN8S1UTsjaVqgG0PlH2J1mFP0tByiioaiD1uYaU/E1U4F90krK0d7tOcyl3fzG3rapZZ23wXZT2ia7Qe8qRraotaVFMUlaMklPwqqanKMUZxi+03IejlBWGFHEDZ32/tjb+ovgXuagaf08FnzvwkNhpxgGdDrPIWZvieU8k7qp4aGq08mfR9awtHwYuF5VlohlPh4Hj6UPEAh+Ggcv4IWrGIRIoVVH/+7Wx92gF/kYqVUuQtS0o3ceZqff74fJm//u10UHKqKBqS1qv0Kb99hK8vpendtQvCkqZIS0D3a+tzev3f4PW9+97gQxVLVLWJh2SFP15fgtU3tvzz4ICK0CarE0hcCP98/5w+M/nQv3Pb4eHd6LQL5+sbZKyohikrOBVTUeZQNu2Px3T5OFvGDxe6EhZ94tuKyZ93wL8aWY04LMRjoNcqit8O66o88SqT2vcTE1StRRZm/rWuuoKX7Z5NoJ91qZL4DraqCp8aXNJtIbfZ9Rnqy96qVLVSiSpGixw03RTeFw3RcGpCUiZKR3K0lPET03XCYs5Clf4lh+nEDA1ldRN1YJkbeOeQM87ACt8obnZsxEE6qZqqqzNRtUo0PZHClb4qSgUS0R4Wi5piGcjCE+LAzvNpzyH3nuhT5YDVouuwHN5NoJN1sbT029VHsM3lm/3bITiKGWT6xQL9YEpW6HScfipKey+Q0iKuIGzfzaCOJxQL51VjX9vBn6HLJCqhcvaQMpXGE7VtsnaoKcgcBUOqjbs9UbPRsg5VRMEzkbVTpQ88lOUGzgjKctXKZMoVVGP1QKDqwXmVgs/VQsicLl4Gcn6dcACPerXfHa3qPCkavB7c17VjpRTNXPKIErpJGV0zNroqF8crU0oO1J2rLBXNf17R9EKQUsFHTuNvappHw08d5o0qpYqawNWi8SqFjdr4+lY4cusapLWWT8d0DtrC6FqC1o9Jlc1pqZOWRuoaielGszbUtUEegFZm7GqxT97Cpe14UXWZqdq8bO2fOzqfNYm0FnKJiqoGk8fdoOqdYMMvLdV0jgCh/ipuT5hVaq2pM97iK6qWsysbZIysRbDG7lIUlaYqFowgQNVbVGhn6qtCZw1DaRqC2qUtRmpmvjEUQt6cVmbhn6IrE2VwG2dtVnLEzN5L+MpMxQtNdV+BwZSxA3cuqoZZW2OqnZBWdsZP4c0UNZGYHoeWdtJv2BVsxU4LW1zUMpMKDOkpqsFqF9GAmdEN8nadAJHeGojZdtnbR6qFlzglFpnoGp2WRuoav4Cd9FZ2/mtFqGzNmkV3zRrY93WSw4bhIjNosXRQkvZedOVrA1UtbWszUXVLitr2/6QjJ216QVuy6yNl7KtBS6XKXOhiJ+axneki6FqSbI2R4FzUbWUWdv5qxq1VTUga2uErC2Sqt2yNuPVIs01pDZZ25rAxc3a2Ml5hBdTCrzpbCjiBm5d1W5Z25mePSXK2kwELmrW1vuNrGpqKuuXLTVSNT+Bg5Ko687axApvWVsEVbMWOH2nCXZSqOk0GOw0GOwpGOopMGUz7Su8gtUibdZmKXABszZbVbsQret/aaU8cLes7ZLOnrbJ2kILnHXWZqRqHgIXWdXkrE2VRF131ibuydlnbXVIVfMTOGNVM6EVDdBpLFUNoLKUOQocA+j/b6P1XGR+O3sAAAAASUVORK5CYII="
+                                    alt=""> 10 H
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="worldCup_card">
+                    <img src="assets/Blog Image.png" alt="">
+                    <div class="worldCup_card_text">
+                        <button>Transfer</button>
+                        <p>Transfer Live: Chlesea in talks over Kimpenbe transfer</p>
+                        <div class="card_footer">
+
+
+                            <div class="card_footer">
+                                <img style="width:30px; "
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ5HVjqLPO8jdxhVGJk3gFB7M2ZNMkMj22gg&usqp=CAU"
+                                    alt=""> 10 H
+                            </div>
+                            <div class="card_footer">
+                                <img style="width:30px; "
+                                    src="data:image/png;base64,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"
+                                    alt=""> 10 H
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+            <div class="tabletButton">
+                <button class=".button">
+                    Next_page
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- footer -->
+
+    <footer class="footer">
+        <div>
+            <h1>Goal</h1>
+            <div>
+                <div class="footer_border">s</div>
+                <div class="footer_link">
+                    <a href="#home">Home</a>
+                    <a href="#home">about us</a>
+                    <a href="#home">Contact us</a>
+                    <a href="#home">login now</a>
+                    <a href="#home">subscibe now</a>
+
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>

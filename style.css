@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Open+Sans:ital@1&family=Poppins:ital@0;1&display=swap');
+
+/* body {
+    font-family: 'Dancing Script', cursive;
+} */
+
+.header {
+
+    /* height: 500px; */
+    background-color: rgba(22, 22, 22, 1);
+    border-radius: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+}
+
+.header_text {
+    margin-left: 50px;
+}
+
+.header_text h1 {
+    font-size: 70px;
+    color: white;
+    margin: 0;
+}
+
+.header_text p {
+    color: white;
+    font-size: 16px;
+    /* margin: 0; */
+
+}
+
+.header_text button {
+    background: rgba(221, 0, 0, 1);
+    border-radius: 5px;
+    padding: 16px 25px 16px 25px;
+    border: none;
+    color: white;
+
+}
+
+.header_img img {
+    margin-bottom: -70px;
+}
+
+/* world cup part */
+
+
+.world_cup {
+    display: grid;
+    grid-template-columns: 25% 70%;
+    margin-top: 100px;
+}
+
+.worldCup_btnGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(22, 22, 22, 1);
+    border-radius: 7px;
+    padding: 20px;
+    height: 312px;
+
+
+}
+
+.worldCup_btnGroup .button {
+    height: 55px;
+    width: 200px;
+    border-radius: 10px;
+    margin: 4px 3px 4px 3px;
+    border: none;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+.worldCup_card_part {
+
+    margin-left: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.worldCup_btnGroup .button:hover {
+    background: rgba(221, 0, 0, 1);
+    color: white;
+    grid-gap: 20px;
+}
+
+.worldCup_card {
+    border: 1px solid;
+    width: 332px;
+    height: 362px;
+    border-radius: 8px;
+    border: none;
+}
+
+.worldCup_card button {
+    height: 32px;
+    width: 100px;
+    border-radius: 5px;
+    border: 0.4px solid;
+
+}
+
+.worldCup_card button:hover {
+    color: white;
+    background: rgba(221, 0, 0, 1);
+    border: none;
+}
+
+.worldCup_card_text {
+    margin: 10px;
+}
+
+.worldCup_card_text p {
+    font-size: 15px;
+}
+
+.card_footer {
+    display: flex;
+    align-items: center;
+}
+
+.tabletButton {
+    display: none;
+}
+
+.tabletButton button {
+    background: rgba(221, 0, 0, 1);
+    border-radius: 5px;
+    padding: 16px 25px 16px 25px;
+    border: none;
+    color: white;
+}
+
+/* footer */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(22, 22, 22, 1);
+    height: 444px;
+
+}
+
+.footer h1 {
+    text-align: center;
+    color: white;
+
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    margin: 40px;
+}
+
+.footer_border {
+    width: 700px;
+    height: 2px;
+    background-color: blue;
+}
+
+.footer_link {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+}
+
+
+
+
+
+/* responsive ness */
+/* Tablet view */
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .header_text h1 {
+        font-size: 30px;
+    }
+
+    .header_img img {
+        margin-bottom: -10px;
+    }
+
+    .world_cup {
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .worldCup_card_part {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tabletButton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 30px;
+    }
+
+
+    .worldCup_btnGroup {
+        width: 500px;
+        flex-direction: row;
+
+        background-color: white;
+        height: 200px;
+        margin: 0 auto;
+
+
+    }
+
+    .worldCup_btnGroup .button {
+        margin-right: 20px;
+    }
+
+
+    .footer_border {
+        width: 500px;
+    }
+}
+
+/* moble viwe */
+
+@media only screen and (max-width:669px) {
+    .header {
+        flex-direction: column;
+        height: 650px;
+    }
+
+    .header_text h1 {
+        font-size: 30px;
+    }
+
+    .header_img {
+        margin-bottom: 0;
+        margin-top: -12;
+    }
+
+    .world_cup {
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .worldCup_btnGroup {
+        background-color: white;
+        height: 200px;
+
+    }
+
+
+    .worldCup_card_part {
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 30px;
+    }
+
+    .footer_border {
+        width: 300px;
+    }
+
+
+    .footer a {
+        margin: 10px;
+    }
+
+}
